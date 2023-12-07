@@ -21,6 +21,9 @@ def random_walk(num_steps:int, prob_right:float, num_particles:int):
 
   particle_paths = [p.positions for p in particles]
 
+  print(particle_paths[0][0])
+  print(particle_paths[1][1])
+
   create_plot(num_steps, particle_paths)
 
   return particle_paths
